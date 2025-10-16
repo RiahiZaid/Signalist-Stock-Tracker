@@ -1,50 +1,76 @@
-🤸 Quick Start
-Follow these steps to set up the project locally on your machine.
+🚀 Signalist : Stock Tracker
+Suivez les prix des actions en temps réel.
 
-Prerequisites
+🏁 Démarrage Rapide
+Ce guide vous explique comment configurer et lancer le projet Signalist sur votre machine locale.
 
-Make sure you have the following installed on your machine:
+Prérequis
+Assurez-vous que les outils suivants sont installés avant de commencer :
 
 Git
-Node.js
-npm (Node Package Manager)
-Cloning the Repository
 
-git clone https://github.com/adrianhajdin/signalist_stock-tracker-app.git
-cd signalist_stock-tracker-app
-Installation
+Node.js (recommandé : LTS)
 
-Install the project dependencies using npm:
+npm (gestionnaire de paquets Node)
+
+1. Clonage du Dépôt
+Ouvrez votre terminal et exécutez les commandes suivantes pour télécharger et accéder au dossier du projet :
+
+Bash
+
+git clone https://github.com/RiahiZaid/Signalist-Stock-Tracker
+cd Signalist-Stock-Tracker-App
+2. Installation des Dépendances
+Installez toutes les bibliothèques et paquets nécessaires au fonctionnement du projet :
+
+Bash
 
 npm install
-Set Up Environment Variables
+3. Configuration des Variables d'Environnement
+Le projet nécessite plusieurs clés API et informations de connexion pour fonctionner.
 
-Create a new file named .env in the root of your project and add the following content:
+Créez un nouveau fichier nommé .env à la racine de votre projet.
+
+Copiez-y le contenu suivant et remplacez les valeurs de substitution (=) par vos propres identifiants.
+
+مقتطف الرمز
 
 NODE_ENV='development'
 NEXT_PUBLIC_BASE_URL=http://localhost:3000
 
-# FINNHUB
+# FINNHUB (Données boursières en temps réel)
 NEXT_PUBLIC_NEXT_PUBLIC_FINNHUB_API_KEY=
 FINNHUB_BASE_URL=https://finnhub.io/api/v1
 
-# MONGODB
+# MONGODB (Base de données)
 MONGODB_URI=
 
-# BETTER AUTH
+# AUTHENTIFICATION (Better Auth)
 BETTER_AUTH_SECRET=
 BETTER_AUTH_URL=http://localhost:3000
 
-# GEMINI
+# GEMINI (IA pour le traitement ou l'analyse)
 GEMINI_API_KEY=
 
-#NODEMAILER
+# NODEMAILER (Envoi d'e-mails, par exemple pour les alertes)
 NODEMAILER_EMAIL=
 NODEMAILER_PASSWORD=
-Replace the placeholder values with your real credentials. You can get these by signing up at: MongoDB, Gemini, Inngest, Finnhub.
+⚠️ IMPORTANT : Vous devrez vous inscrire auprès des services suivants pour obtenir les clés nécessaires : Finnhub, MongoDB et Gemini.
 
-Running the Project
+4. Lancement du Projet
+Pour lancer l'application, vous devez démarrer le serveur Next.js et l'outil de développement Inngest (pour les fonctions asynchrones/tâches planifiées).
+
+Démarrez le serveur Next.js en mode développement :
+
+Bash
 
 npm run dev
+Dans un second terminal, démarrez l'outil de développement Inngest :
+
+Bash
+
 npx inngest-cli@latest dev
-Open http://localhost:3000 in your browser to view the project.
+5. Accès à l'Application
+Une fois les deux serveurs lancés, ouvrez votre navigateur et accédez à :
+
+👉 http://localhost:3000
