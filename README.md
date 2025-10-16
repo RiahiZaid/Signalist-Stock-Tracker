@@ -8,28 +8,29 @@ Prérequis
 Assurez-vous que les outils suivants sont installés avant de commencer :
 
 Git
-
 Node.js (recommandé : LTS)
-
 npm (gestionnaire de paquets Node)
 
 1. Clonage du Dépôt
 Ouvrez votre terminal et exécutez les commandes suivantes pour télécharger et accéder au dossier du projet :
 
-Bash
+```bash
 
 git clone https://github.com/RiahiZaid/Signalist-Stock-Tracker
 cd Signalist-Stock-Tracker-App
+```
+
 2. Installation des Dépendances
 Installez toutes les bibliothèques et paquets nécessaires au fonctionnement du projet :
 
-Bash
-
+```bash
 npm install
+```
+
 3. Configuration des Variables d'Environnement
 Le projet nécessite plusieurs clés API et informations de connexion pour fonctionner.
 
-Créez un nouveau fichier nommé .env à la racine de votre projet.
+Créez un nouveau fichier nommé `.env` à la racine de votre projet.
 
 Copiez-y le contenu suivant et remplacez les valeurs de substitution (=) par vos propres identifiants.
 
@@ -63,14 +64,15 @@ Pour lancer l'application, vous devez démarrer le serveur Next.js et l'outil de
 
 Démarrez le serveur Next.js en mode développement :
 
-Bash
-
+```bash
 npm run dev
+```
 Dans un second terminal, démarrez l'outil de développement Inngest :
 
-Bash
-
+```bash
 npx inngest-cli@latest dev
+```
+
 5. Accès à l'Application
 Une fois les deux serveurs lancés, ouvrez votre navigateur et accédez à :
 
