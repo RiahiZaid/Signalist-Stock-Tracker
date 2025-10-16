@@ -33,8 +33,7 @@ Créez un nouveau fichier nommé .env à la racine de votre projet.
 
 Copiez-y le contenu suivant et remplacez les valeurs de substitution (=) par vos propres identifiants.
 
-مقتطف الرمز
-
+```env
 NODE_ENV='development'
 NEXT_PUBLIC_BASE_URL=http://localhost:3000
 
@@ -55,6 +54,8 @@ GEMINI_API_KEY=
 # NODEMAILER (Envoi d'e-mails, par exemple pour les alertes)
 NODEMAILER_EMAIL=
 NODEMAILER_PASSWORD=
+```
+
 ⚠️ IMPORTANT : Vous devrez vous inscrire auprès des services suivants pour obtenir les clés nécessaires : Finnhub, MongoDB et Gemini.
 
 4. Lancement du Projet
